@@ -1,0 +1,100 @@
+package encapsulation;
+
+public class Atm
+{
+      public String banck;
+      public String name;
+      public String loc;
+      public int no;
+      public  long balance;
+      
+      
+     long ano=123456789;
+     int pint=728999;
+     
+      
+      
+      Atm()
+      {}
+      
+	 Atm(String banck,String name,String loc,int no, long amount)
+	 {
+		 this.banck=banck;
+		 this.name=name;
+		 this.loc=loc;
+		 this.no=no;
+		 amount=balance;
+	 }
+	 
+	 public String getbanck()
+	 {
+		 return banck;
+	 }
+	 
+	 public String getname()
+	 {
+		 return name;
+	 }
+	 
+	 public String getloc()
+	 {
+		 return loc;
+	 }
+	
+	 
+	 public long setamount(long aano,int pin)
+	 {
+		 if(aano==ano && pin==pint)
+		 {
+			 System.out.println("Login successfull !");
+		 }
+		 else
+		 {
+			 System.out.println("Enter the valid detaills ");
+		 }
+		 
+		 
+		 return balance;
+	 }
+    
+	 
+	 public void displayAtm()
+	 {
+		 System.out.println("Bnack :"+banck);
+		 System.out.println("Name :"+name);
+		 System.out.println("Loc :"+loc);
+		 System.out.println("No :"+no);
+		 System.out.println("Amount :"+balance);
+	 }
+
+}
+
+============================================================================================
+
+package encapsulation;
+
+public class AtmDriver {
+
+	public static void main(String[] args) 
+	{
+		Atm b1 = new Atm("BOI","Saurbh Jagtap","Dubai",10,5000000l);
+		b1.displayAtm();
+		
+		
+		System.out.println("=========================");
+		
+		
+		System.out.println("location :"+b1.loc);
+		
+		System.out.println();
+		
+		b1.setamount(123456789,728999);
+		System.out.println();
+		
+		b1.setamount(123456789, 728999);
+		
+		
+		
+	}
+
+}
